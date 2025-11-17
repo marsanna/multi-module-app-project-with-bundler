@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.d-1 {
+  @apply max-w-[100%] relative overflow-hidden whitespace-nowrap text-ellipsis;
+}
+.d-2 {
+  @apply max-w-[100%] absolute top-0 left-0 h-full p-4 overflow-auto text-center whitespace-normal bg-white/90;
+}
