@@ -106,12 +106,14 @@
     </footer>
     <div
       id="cart_modal"
-      class="absolute w-[300px] left-[50%] -ml-[150px] top-5 bg-black/50 hidden items-center justify-center z-50"
+      class="fixed w-[300px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden items-center justify-center z-50"
     >
-      <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-md p-6 relative">
+      <div
+        class="bg-black text-white rounded-lg shadow-xl w-full max-w-md p-6 relative"
+      >
         <button
           id="close_cart"
-          class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl"
+          class="absolute top-3 right-3 text-blue-600 hover:text-blue-700 text-xl"
         >
           ✕
         </button>
@@ -119,10 +121,10 @@
         <div id="empty_cart" class="hidden">
           Der Warenkorb ist aktuell leer.
         </div>
-        <div id="cart_content" class="text-gray-700 space-y-4"></div>
+        <div id="cart_content" class="text-white space-y-4"></div>
         <div class="mt-6 flex justify-end">
           <button
-            class="px-4 py-2 rounded bg-gray-900 text-white hover:bg-gray-800 cursor-pointer"
+            class="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 cursor-pointer"
           >
             Zur Kasse
           </button>
